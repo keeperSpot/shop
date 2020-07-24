@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>770479615918-hvcptsmmblkbu8dt4clf5bq3uhm4hddr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.770479615918-hvcptsmmblkbu8dt4clf5bq3uhm4hddr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyChsBkAe5XzJG9v8d9IQoWi9I2-fkm2uHc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>770479615918</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>in.keeperspot.shop</string>
+	<key>PROJECT_ID</key>
+	<string>shop-dev-265be</string>
+	<key>STORAGE_BUCKET</key>
+	<string>shop-dev-265be.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:770479615918:ios:1c00e8141339794ff2223f</string>
+	<key>DATABASE_URL</key>
+	<string>https://shop-dev-265be.firebaseio.com</string>
+</dict>
+</plist>

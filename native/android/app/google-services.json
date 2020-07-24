@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "770479615918",
+    "firebase_url": "https://shop-dev-265be.firebaseio.com",
+    "project_id": "shop-dev-265be",
+    "storage_bucket": "shop-dev-265be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770479615918:android:c97317ffa6d6429cf2223f",
+        "android_client_info": {
+          "package_name": "in.keeperspot.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770479615918-dkbi1g8gle3u2e2389v2mmmebtrjb6j4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.keeperspot.shop",
+            "certificate_hash": "49a628dbe2416cd29c33f49d2220f228cafdca8e"
+          }
+        },
+        {
+          "client_id": "770479615918-99a6tsjuu5fs0aqp4dto0dkq7j1pnnth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5MBHs_F0VQkM6UGhnkVo-qEcsAQfw_NI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770479615918-99a6tsjuu5fs0aqp4dto0dkq7j1pnnth.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "770479615918-hvcptsmmblkbu8dt4clf5bq3uhm4hddr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.keeperspot.shop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+{
+  "private": true,
+  "keywords": [
+    "react-native",
+    "react",
+    "yarn-workspaces",
+    "monorepo",
+    "ios",
+    "android",
+    "pwa"
+  ],
+  "workspaces": [
+    "web",
+    "native",
+    "common"
+  ],
+  "scripts": {
+    "android": "yarn workspace native android",
+    "build:android": "yarn workspace native build:android",
+    "build:web": "yarn workspace web build",
+    "clean": "./clean.js",
+    "ios": "yarn workspace native ios",
+    "lint": "eslint --fix \"**/!(node_modules)/*.{js,jsx,ts,tsx}\"",
+    "macos": "yarn workspace native macos",
+    "native": "yarn workspace native start",
+    "pod": "cd ./native/ios && pod install",
+    "start": "concurrently -n W,N \"yarn web\" \"yarn native\"",
+    "studio": "yarn workspace native studio",
+    "sync": "concurrently -n W,N \"yarn workspace web sync\" \"yarn workspace native sync\"",
+    "web": "yarn workspace web start",
+    "xcode": "yarn workspace native xcode"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/!(node_modules)/*.{js,jsx,ts,tsx}": [
+      "pretty-quick —-staged",
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "airbnb": "^0.0.2",
+    "babel-eslint": "^10.1.0",
+    "concurrently": "^5.2.0",
+    "copyfiles": "^2.3.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "glob": "^7.1.6",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.6",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "rimraf": "^3.0.2",
+    "sync-directory": "^2.2.2"
+  },
+  "dependencies": {
+    "react-native-tailwindcss": "https://github.com/Faisal-Manzer/react-native-tailwindcss.git"
+  }
+}
