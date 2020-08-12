@@ -15,6 +15,8 @@ import { css } from 'styles';
 
 import { GettingStarted } from 'components/examples/GettingStarted';
 import { MonorepoIntro } from 'components/examples/MonorepoIntro';
+import { MainBoardScreen } from "./screens";
+import { DashBoardComponent } from "./screens/dashboard";
 
 const { store, persistor } = getStore(storage);
 
@@ -31,6 +33,8 @@ const App = () => (
         <Router>
           <GettingStarted path='/example/' />
           <MonorepoIntro path='/example/intro/' />
+          <MainBoardScreen path='/main/' />
+          <DashBoardComponent path='/dashboard/' />
         </Router>
       </>
     </PersistGate>
