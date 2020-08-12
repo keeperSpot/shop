@@ -8,11 +8,11 @@ import { DashBoardComponent } from "./dashboard";
 import 'App.css';
 
 export const MainBoardScreen = () => (
-  <div>
-    <NavbarComponent />
-    <div className='flex'>
-      <LeftNavbarComponent />
-      <DashBoardComponent />
-    </div>
+  <div className='w-100 h-100'>
+    {/* <NavbarComponent /> */}
+    {/* <div className='flex'> */}
+    <LeftNavbarComponent />
+    {/*  <DashBoardComponent /> */}
+    {/* </div> */}
   </div>
 );

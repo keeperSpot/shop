@@ -17,6 +17,7 @@ import { GettingStarted } from 'components/examples/GettingStarted';
 import { MonorepoIntro } from 'components/examples/MonorepoIntro';
 import { MainBoardScreen } from "./screens";
 import { DashBoardComponent } from "./screens/dashboard";
+import { Main } from './Main';
 
 const { store, persistor } = getStore(storage);
 
@@ -30,12 +31,7 @@ const App = () => (
     <PersistGate loading={<div>Loading...</div>} persistor={persistor}>
       <>
         <Initial />
-        <Router>
-          <GettingStarted path='/example/' />
-          <MonorepoIntro path='/example/intro/' />
-          <MainBoardScreen path='/main/' />
-          <DashBoardComponent path='/dashboard/' />
-        </Router>
+        <Main />
       </>
     </PersistGate>
   </Provider>

@@ -5,6 +5,9 @@ import App from './App';
 
 import * as serviceWorker from './serviceWorker';
 
+require('react-web-vector-icons/fonts');
+
+
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
   render(<App />, rootElement, rootElement.firstElementChild);

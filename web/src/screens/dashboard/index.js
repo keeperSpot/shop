@@ -8,9 +8,9 @@ import { GlobalData } from "../../components/globalDataComponent";
 import 'App.css';
 
 export const DashBoardComponent = () => (
-  <div className='flex-row p-6 mx-auto'>
+  <div className='flex-row p-6'>
     <h1 className='text-white'>DASHBOARD</h1>
-    <div className='bg-white w-full rounded '>
+    <div className='bg-white  rounded '>
       <div className='flex justify-between '>
         <div className='p-12 px-32 m-3 bg-gray-300 rounded'>
           <p>
