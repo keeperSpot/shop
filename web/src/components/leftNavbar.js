@@ -1,12 +1,11 @@
-import React, { useState,useEffect } from 'react';
-import KeeperLogo from 'assets/ic_launcher-web.png'
+import React, { useState } from 'react';
+import KeeperLogo from 'assets/ic_launcher-web.png';
 import { MaterialCommunityIcons } from 'react-web-vector-icons';
 import { Link } from '@reach/router';
 
 export const LeftNavbarComponent = ({ routes }) => {
   const { pathname } = window.location;
   const [open, setOpen] = useState(pathname);
-  const isLoggedIn=true;
   return (
     <div className='flex-column justify-center  h-full bg-gray-300 p-3 md:w-16 lg:w-auto'>
       <div className='flex flex-row items-center my-2 lg:my-2 md:my-0 justify-center'>

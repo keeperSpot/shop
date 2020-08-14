@@ -63,6 +63,7 @@
     "sync-directory": "^2.2.2"
   },
   "dependencies": {
-    "react-native-tailwindcss": "https://github.com/Faisal-Manzer/react-native-tailwindcss.git"
+    "react-native-tailwindcss": "https://github.com/Faisal-Manzer/react-native-tailwindcss.git",
+    "react-web-vector-icons": "^1.0.2"
   }
 }

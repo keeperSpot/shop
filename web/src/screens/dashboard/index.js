@@ -1,18 +1,16 @@
 import React from 'react';
 
-import { Link } from '@reach/router';
-import { NavbarComponent } from 'components/navbar';
 import { GraphComponent } from "../../components/graphComponent";
 import { GlobalData } from "../../components/globalDataComponent";
 
-import 'App.css';
+import { ProductList } from "./productlist";
 
 export const DashBoardComponent = () => (
-  <div className='flex-row p-6'>
-    <h1 className='text-white'>DASHBOARD</h1>
-    <div className='bg-white  rounded '>
-      <div className='flex justify-between '>
-        <div className='p-12 px-32 m-3 bg-gray-300 rounded'>
+  <>
+    <div className='flex-row p-6'>
+      <h1 className=''>DASHBOARD</h1>
+      <div className='grid grid-cols-2 md:grid-cols-4'>
+        <div className='p-3 m-3 bg-gray-300 rounded'>
           <p>
             <span className='text-lg'> 10788</span>
             {' '}
@@ -20,7 +18,7 @@ export const DashBoardComponent = () => (
             {' '}
           </p>
         </div>
-        <div className='p-12 px-32 m-3 bg-gray-300 rounded '>
+        <div className='p-3 m-3 bg-gray-300 rounded '>
           <p>
             <span className='text-lg'> 10788</span>
             {' '}
@@ -28,7 +26,7 @@ export const DashBoardComponent = () => (
             {' '}
           </p>
         </div>
-        <div className='p-12 px-32 m-3 bg-gray-300 rounded'>
+        <div className='p-3 m-3 bg-gray-300 rounded'>
           <p>
             <span className='text-lg'> 10788</span>
             {' '}
@@ -36,7 +34,7 @@ export const DashBoardComponent = () => (
             {' '}
           </p>
         </div>
-        <div className='p-12 px-32 m-3 bg-gray-300 rounded '>
+        <div className='p-3 m-3 bg-gray-300 rounded '>
           <p>
             <span className='text-lg'> 10788</span>
             {' '}
@@ -45,10 +43,11 @@ export const DashBoardComponent = () => (
           </p>
         </div>
       </div>
-      <div className=' flex flex-grow'>
-        <div className='flex-grow m-2 '><GraphComponent /></div>
-        <div className='flex m-2 '><GlobalData /></div>
+      <div className='grid grid-cols-1 md:flex '>
+        <div className='md:w-2/3'><GraphComponent /></div>
+        <div className='mx-auto md:w-1/3'><GlobalData /></div>
       </div>
+      <ProductList />
     </div>
-  </div>
+  </>
 );
