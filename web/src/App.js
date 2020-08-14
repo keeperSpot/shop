@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-import { Router } from '@reach/router';
 import { Provider } from 'react-redux';
 import storage from 'localforage';
 import { PersistGate } from 'redux-persist/integration/react';
@@ -13,10 +12,6 @@ import { getStorage } from 'common/storage';
 import { notify } from 'helpers/alert';
 import { css } from 'styles';
 
-import { GettingStarted } from 'components/examples/GettingStarted';
-import { MonorepoIntro } from 'components/examples/MonorepoIntro';
-import { MainBoardScreen } from "./screens";
-import { DashBoardComponent } from "./screens/dashboard";
 import { Main } from './Main';
 
 const { store, persistor } = getStore(storage);

@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export const NavbarComponent = () => {
-  const profilePic="https://www.nicepng.com/png/detail/136-1366211_group-of-10-guys-login-user-icon-png.png";
   const isAuthenticated=false;
   const image=null;
   console.log("in the navbar ");
@@ -14,7 +13,8 @@ export const NavbarComponent = () => {
         <div className=' flex justify-end item-center pr-12'>
           <a
             href='#responsive-header'
-            className=' mt-4 text-base d-none d-md-block   bg-blue-900 p-2 rounded-full  text-white   hover:text-blue-500 mr-4'>
+            className=' mt-4 text-base d-none d-md-block
+              bg-blue-900 p-2 rounded-full  text-white   hover:text-blue-500 mr-4'>
             See Stats
           </a>
           <a
