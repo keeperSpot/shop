@@ -23,7 +23,7 @@ window.notify = notify;
 window.css = css;
 
 
-const isAuth = false;
+const isAuth = true;
 
 const App = () => (
   <Provider store={store}>
