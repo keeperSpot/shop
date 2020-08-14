@@ -2,6 +2,7 @@ const { override, addWebpackResolve, fixBabelImports } = require('customize-cra'
 const postcss = require('react-app-rewire-postcss');
 const path = require('path');
 
+
 require('../sync')('web', process.env.NODE_ENV === 'development');
 
 module.exports = (config) => {

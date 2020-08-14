@@ -2,11 +2,14 @@ import React, { useState,useEffect } from 'react';
 import KeeperLogo from 'assets/ic_launcher-web.png'
 import { MaterialCommunityIcons } from 'react-web-vector-icons';
 import { Link } from '@reach/router';
+import { SearchBar } from './elms/searchBar'
 
 export const LeftNavbarComponent = ({ routes }) => {
   const { pathname } = window.location;
   const [open, setOpen] = useState(pathname);
   const isLoggedIn=true;
+  // let tmpRoutes=routes;
+  const [sideBarLinks,setsideBarLinks]=useState(routes);
   return (
     <div className='flex-column justify-center  h-screen bg-gray-300 p-3 '>
       <div className='flex flex-row items-center my-2'>
@@ -44,15 +47,19 @@ export const LeftNavbarComponent = ({ routes }) => {
       </div>
 
       <div className='px-2 justify-center items-center flex'>
-        <input
-          placeholder='Search'
-          className='bg-white shadow rounded p-2 my-4'
+        {console.log(routes)}
+        <SearchBar
+          _for='sideBarLinks'
+          payload={routes}  
+          callBack={x=>{setsideBarLinks(x)}}
+          qp='title' 
         />
+
       </div>
 
       <ul className='list-reset'>
         {
-          routes.map(Route=>(
+          sideBarLinks.map(Route=>(
             <li
               className={`${open===Route.to?'bg-gray-400 rounded px-2':'px-2'}`}>
               <Link
