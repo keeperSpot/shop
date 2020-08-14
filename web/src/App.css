@@ -15,6 +15,8 @@ html{
     height: 40vmin;
     pointer-events: none;
 }
+input {border-style:none;}
+
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
@@ -44,6 +46,12 @@ html{
     to {
         transform: rotate(360deg);
     }
+}
+.no-outline:focus {
+    outline: none;
+    border-color: #718096;
+    border-left-width: 3px;
+    border-style: solid;
 }
 
 @tailwind base;

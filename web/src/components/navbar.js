@@ -7,7 +7,7 @@ export const NavbarComponent = () => {
   return (
     <div>
       <nav className='bg-gray-800'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 '>
           <div className='flex items-center justify-between h-16'>
             <div className='flex items-center'>
               <div className='flex-shrink-0'>
@@ -169,7 +169,7 @@ export const NavbarComponent = () => {
                 <div className='mt-1 text-sm font-medium leading-none text-gray-400'>tom@example.com</div>
               </div>
             </div>
-            <div className='mt-3 px-2'>
+            <div className='mt-3 px-2 '>
               <a
                 href='https://google.com'
                 className='block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'>
