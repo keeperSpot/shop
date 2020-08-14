@@ -1,8 +1,15 @@
+@font-face {
+    font-family: MaterialCommunityIcons;
+    font-style: normal;
+    font-weight: 400;
+    src: url(~react-web-vector-icons/fonts/MaterialCommunityIcons.ttf) format('truetype')
+}
+
 .App {
     text-align: center;
 }
 html{
-    background-color: #AFCCDE;
+    /*background-color: #AFCCDE;*/
 }
 .App-logo {
     height: 40vmin;

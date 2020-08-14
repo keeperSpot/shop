@@ -72,7 +72,7 @@ export const GraphComponent = () => {
   };
 
   return (
-    <div className='flex flex-grow p-7 m-12 '>
+    <div className='flex flex-grow p-7 m-12 shadow-lg '>
       <div className=' flex-auto '>
         <CanvasJSChart options={options}
                     />
