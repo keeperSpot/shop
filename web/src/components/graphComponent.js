@@ -40,6 +40,7 @@ export const GraphComponent = () => {
       itemclick: false
     },
     data: [{
+      type: "spline",
       name: "Units Sold",
       showInLegend: true,
       dataPoints: [

@@ -6,7 +6,7 @@ export const LeftNavbarComponent = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className='flex-row justify-center w-32 h-screen text-blue-900  bg-white '>
+    <div className='flex-row justify-center w-32 h-screen text-blue-900  bg-white d-none md-d-block '>
       <ul className='list-reset '>
         <li>
           <a
