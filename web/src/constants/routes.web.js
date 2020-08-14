@@ -2,6 +2,8 @@ import React from 'react';
 import { MonorepoIntro } from 'components/examples/MonorepoIntro';
 import { MainBoardScreen } from 'screens';
 import { DashBoardComponent } from 'screens/dashboard';
+import { GroceriesForm } from "../screens/form";
+import { SignIn } from '../screens/public/signIn';
 
 export const navBarRoutes = [
   {
@@ -21,5 +23,18 @@ export const navBarRoutes = [
     title:'Services',
     icon:'view-list',
     Component:()=><MonorepoIntro />
+  },
+  {
+    to:'/groceriesform/',
+    title:'GroceriesForm',
+    icon:'view-list',
+    Component:()=><GroceriesForm />
+  }
+]
+
+export const publicRoutes = [
+  {
+    to:'/',
+    Component:()=><SignIn />
   },
 ]
