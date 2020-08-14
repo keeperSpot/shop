@@ -12,7 +12,8 @@ import { getStorage } from 'common/storage';
 import { notify } from 'helpers/alert';
 import { css } from 'styles';
 
-import { Main } from './Main';
+import { PrivateRoutes } from 'navigation/PrivateRoutes';
+import { PublicRoutes } from 'navigation/publicRoutes';
 
 const { store, persistor } = getStore(storage);
 
@@ -21,12 +22,15 @@ window.storage = getStorage(window.localStorage);
 window.notify = notify;
 window.css = css;
 
+
+const isAuth = false;
+
 const App = () => (
   <Provider store={store}>
     <PersistGate loading={<div>Loading...</div>} persistor={persistor}>
       <>
         <Initial />
-        <Main />
+        {isAuth?<PrivateRoutes />:<PublicRoutes />}
       </>
     </PersistGate>
   </Provider>

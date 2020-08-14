@@ -3,6 +3,7 @@ import { MonorepoIntro } from 'components/examples/MonorepoIntro';
 import { MainBoardScreen } from 'screens';
 import { DashBoardComponent } from 'screens/dashboard';
 import { GroceriesForm } from "../screens/form";
+import { SignIn } from '../screens/public/signIn';
 
 export const navBarRoutes = [
   {
@@ -29,4 +30,11 @@ export const navBarRoutes = [
     icon:'view-list',
     Component:()=><GroceriesForm />
   }
+]
+
+export const publicRoutes = [
+  {
+    to:'/',
+    Component:()=><SignIn />
+  },
 ]
