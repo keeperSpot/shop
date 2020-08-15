@@ -1,8 +1,8 @@
 import React from "react";
 
-export const TextInput = ({ labelText }) =>{
+export const TextInput = ({ labelText ,placeholderText }) =>{
   return(
-    <div className='mb-4'>
+    <div className='mb-4 m-2'>
       <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor={labelText}>
         {labelText}
       </label>
@@ -10,7 +10,7 @@ export const TextInput = ({ labelText }) =>{
         className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
         id={labelText}
         type='text'
-        placeholder={labelText} />
+        placeholder={`eg: ${placeholderText}`} />
     </div>
   );
 }
