@@ -4,7 +4,7 @@ import { Router } from '@reach/router';
 import { navBarRoutes } from 'constants/routes.web';
 
 
-export const Main = () => {
+export const PrivateRoutes = () => {
   return (
     <ScreenWrapper routes={navBarRoutes}>
       <Router>
