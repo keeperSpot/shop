@@ -7,13 +7,25 @@ const options=[
   { value:'Realme',label:'Realme' },
 ]
 
+const categories = [
+  {
+    value:'mobiles',
+    label:'Mobiles'
+  },
+  {
+    value:'watches',
+    label:'Watches'
+  }
+]
+
 export const AddProductFields = [
   {
     key:'brand_name',
-    type:FORM_ELEMENT_TYPES.SELECT,
+    type:FORM_ELEMENT_TYPES.INPUT,
     others:{
-      options
+      suggestions:options,
     },
+    // defaultValue: 'Brand Name',
     customLabel:'Brand Name'
   },{
     key:'name',
@@ -21,8 +33,19 @@ export const AddProductFields = [
     others:{
       suggestions:[]
     },
+    // defaultValue: 'Product Name',
     customLabel:'Product Name'
-  },{
+  },
+  {
+    key:'category',
+    type:FORM_ELEMENT_TYPES.SELECT,
+    others:{
+      suggestions:categories,
+      options:categories
+    },
+    defaultValue:'mobiles'
+  },
+  {
     key:'country',
     type:FORM_ELEMENT_TYPES.INPUT,
     others:{

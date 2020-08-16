@@ -3,7 +3,6 @@ import React from 'react';
 export const NavbarComponent = () => {
   const isAuthenticated=false;
   const image=null;
-  console.log("in the navbar ");
   return (
     <div>
       <nav className='bg-gray-800'>

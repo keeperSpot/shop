@@ -9,7 +9,8 @@ export const LeftNavbarComponent = ({ routes }) => {
   const [open, setOpen] = useState(pathname);
   const [sideBarLinks,setsideBarLinks]=useState(routes);
   return (
-    <div className='flex-column justify-center  h-full bg-gray-300 p-3 md:w-16 lg:w-auto'>
+    <div className='flex-column justify-center min-h-screen
+     h-full bg-gray-300 p-3 md:w-16 lg:w-auto'>
       <div className='flex flex-row items-center my-2 lg:my-2 md:my-0 justify-center'>
         <img src={KeeperLogo} className='w-10 h-10 m-2 ' alt='logo' />
         <div className='flex flex-col align-start md:hidden lg:flex'>
@@ -47,7 +48,7 @@ export const LeftNavbarComponent = ({ routes }) => {
       </div>
 
       <div className='px-2 justify-center items-center flex md:hidden lg:flex'>
-        <SearchBar 
+        <SearchBar
           payload={routes}
           qp='title'
           callBack={x=>{setsideBarLinks(x)}}

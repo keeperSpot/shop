@@ -6,7 +6,11 @@ const searchInPayload = (payload,queryParameter,q) => {
   const result=[];
   let i;
   q=q.toLowerCase();
+  // eslint-disable-next-line guard-for-in
   for(i in payload){
+    if(payload[i][queryParameter].toLowerCase() === q){
+      return []
+    }
     if(payload[i][queryParameter].toLowerCase().indexOf(q)!==-1){
       // console.log(data[i]['name'].indexOf(q),data[i])
       result.push(payload[i])

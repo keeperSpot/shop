@@ -9,12 +9,12 @@ export const ScreenWrapper = (props) => {
   const { children } = props;
   return(
     <div className='w-100 h-100'>
-      <NavbarComponent />
       <div className='flex'>
         <div className=''>
           <LeftNavbarComponent {...props} />
         </div>
         <div className='flex-1'>
+          <NavbarComponent />
           {children}
         </div>
       </div>

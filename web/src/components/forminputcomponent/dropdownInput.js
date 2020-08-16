@@ -1,21 +1,21 @@
 import React,{ useState } from "react";
 import { MaterialCommunityIcons } from 'react-web-vector-icons';
 
-export const DropdownInput = ({ options,value,setValue,placeholder }) => {
+export const DropdownInput = ({ options,value,setValue,placeholder,bg }) => {
   const [isOpen,setIsOpen] = useState(false)
   return(
-    <div className='m-4'>
+    <div className='mx-4 my-2'>
       <div className='relative'>
         {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
         <div
           onKeyPress={()=>{}}
-          className='rounded my-2 px-2 w-full flex justify-between items-center bg-gray-200'
+          className={`rounded my-2 px-2 w-full flex justify-between items-center ${bg || 'bg-gray-200'}`}
           onClick={()=>{setIsOpen(!isOpen)}}>
           <text>{value|| placeholder ||'Select'}</text>
           <MaterialCommunityIcons className='bg-gray-600' size={20} name='menu-down' />
         </div>
         <div className={`${isOpen?'':'hidden'} rounded shadow-md my-2 relative pin-t pin-l`}>
-          <ul className='list-reset'>
+          <ul className='absolute bg-white z-10 rounded-md shadow-lg'>
             <input className=' h-8 w-full no-outline px-2' placeholder='Search' />
             {(options||[]).map((option=>(
               <li>
